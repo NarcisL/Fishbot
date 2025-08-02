@@ -7,8 +7,10 @@ navigate in the dataset folder
 run this command:
 
 yolo detect train data=data.yaml model=yolov8s.pt epochs=100 imgsz=640
+yolo detect train data=data.yaml model=yolov8s.pt epochs=100 imgsz=640 device=0 #for gpu use
 
 !!IMPORTANT NOTE MY PC DUE TO THE LARGE AMMOUNT OF DATA IN THE DATASET THE TIME NEEDED TO COMPLETE 1 EPOCH IS ~17 minutes adjust the number of epochs accordingly to your system!!
+!!FOR A FASTER EPOCH COMPLETION TIME TRY FINE TUNING USING YOUR GPU"!!
 
 before running the main.py script make sure you have all the requirments
 if not
